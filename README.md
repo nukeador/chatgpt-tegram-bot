@@ -13,6 +13,12 @@ Para utilizar este script, necesitarás:
 * (Opcional) Una cuenta de Amazon Web Services y [credenciales de acceso](https://us-east-1.console.aws.amazon.com/iam/home?region=us-east-1#/security_credentials)
 * (Opcional) Una cuenta en stability.ai y [credenciales de acceso](https://beta.dreamstudio.ai/membership?tab=apiKeys)
 
+Todos estos servidios dan créditos gratuitos de inicio, a Diciembre de 2022, estos son los costes de sus APIs:
+
+- OpenIA: 0,004$/petición
+- Stability IA: 0,002$/petición (con 30 steps)
+- Amazon Polly: Aprox. 0,0125$/minuto de audio
+
 ## Instalación
 
 Para instalar las dependencias necesarias para ejecutar este script en Python, se puede utilizar el administrador de paquetes pip.
