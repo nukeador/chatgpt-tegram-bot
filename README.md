@@ -10,14 +10,15 @@ Este es un script de Python que permite a un usuario enviar mensajes a un bot de
 
 Para utilizar este script, necesitarás:
 
-* Una cuenta de OpenAI y una [clave de API](https://beta.openai.com/account/api-keys)
+* Una cuenta de OpenAI (opcionalmente una [clave de API](https://beta.openai.com/account/api-keys))
 * Un bot de Telegram y un [token de autenticación](https://core.telegram.org/bots#how-do-i-create-a-bot)
 * (Opcional) Una cuenta de Amazon Web Services y [credenciales de acceso](https://us-east-1.console.aws.amazon.com/iam/home?region=us-east-1#/security_credentials)
 * (Opcional) Una cuenta en stability.ai y [credenciales de acceso](https://beta.dreamstudio.ai/membership?tab=apiKeys)
 
 Todos estos servicios dan créditos gratuitos de inicio, a Diciembre de 2022, estos son los costes de sus APIs:
 
-- OpenIA: 0,004$/petición
+- ChatGPT web: Gratis
+- OpenIA API: 0,004$/petición
 - Stability IA: 0,002$/petición (con 30 steps)
 - Amazon Polly: Aprox. 0,0125$/minuto de audio
 
@@ -119,13 +120,14 @@ This is a Python script that allows a user to send messages to a Telegram bot an
 
 To use this script, you will need:
 
-* An OpenAI account and an [API key](https://beta.openai.com/account/api-keys).
+* An OpenAI account (and optionally an [API key](https://beta.openai.com/account/api-keys)).
 * A Telegram bot and an [authentication token](https://core.telegram.org/bots#how-do-i-create-a-bot)
 * (Optional) An Amazon Web Services account and [login credentials](https://us-east-1.console.aws.amazon.com/iam/home?region=us-east-1#/security_credentials)
 * (Optional) A stability.ai account and [login credentials](https://beta.dreamstudio.ai/membership?tab=apiKeys)
 
 All these services give free startup credits, as of December 2022, these are the costs of their APIs:
 
+- ChatGPT web: Free
 - OpenIA: $0.004/request.
 - Stability IA: 0,002$/request (with 30 steps)
 - Amazon Polly: Approx. $0.0125/audio minute
