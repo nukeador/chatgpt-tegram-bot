@@ -18,6 +18,7 @@ telegram_token="XXXX"
 telegram_users=[XXXX]
 
 # Configuración y API de Stability.ia
+# https://beta.dreamstudio.ai/membership?tab=apiKeys
 sd_engine_id = "stable-diffusion-512-v2-0"
 sd_api_host = "https://api.stability.ai"
 sd_api_key = "XXXX"

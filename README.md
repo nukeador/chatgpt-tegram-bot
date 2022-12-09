@@ -6,10 +6,10 @@ Este es un script de Python que permite a un usuario enviar mensajes a un bot de
 
 Para utilizar este script, necesitarás:
 
-* Una cuenta de OpenAI y una clave de API
-* Un bot de Telegram y un token de autenticación
-* (Opcional) Una cuenta de Amazon Web Services y credenciales de acceso
-* (Opcional) Una cuenta en stability.ai y credenciales de acceso
+* Una cuenta de OpenAI y una [clave de API](https://beta.openai.com/account/api-keys)
+* Un bot de Telegram y un [token de autenticación](https://core.telegram.org/bots#how-do-i-create-a-bot)
+* (Opcional) Una cuenta de Amazon Web Services y [credenciales de acceso](https://us-east-1.console.aws.amazon.com/iam/home?region=us-east-1#/security_credentials)
+* (Opcional) Una cuenta en stability.ai y [credenciales de acceso](https://beta.dreamstudio.ai/membership?tab=apiKeys)
 
 ## Instalación
 
@@ -19,18 +19,18 @@ Primero, asegúrate de tener pip instalado en tu sistema. Puedes verificar si ya
 
 
 ```
-    pip --version
+pip --version
 ```
 
 
-Si no tienes pip instalado, puedes instalarlo siguiendo las instrucciones en la página oficial de pip: [https://pip.pypa.io/en/stable/installing/](https://pip.pypa.io/en/stable/installing/)
+Si no tienes pip instalado, puedes instalarlo siguiendo las instrucciones en [la página oficial de pip](https://pip.pypa.io/en/stable/installation/)
 
 
 Para instalar las dependencias, ejecuta el siguiente comando en una terminal en el mismo directorio que el archivo `requirements.txt`:
 
 
 ```
-    pip install -r requirements.txt
+pip install -r requirements.txt
 ```
 
 
@@ -62,7 +62,7 @@ Puedes parar el script en cualquier momento pulsando Ctrl+D
 
 ## Configurar el bot como un servicio en tu servidor Linux
 
-Para configurar un script llamado ``chatgpt-telegram.py`` como un servicio en un servidor Linux, puedes seguir los siguientes pasos:
+Para configurar el script ``chatgpt-telegram.py`` como un servicio en un servidor Linux, puedes seguir los siguientes pasos:
 
 ***Nota:*** Las siguientes instrucciones están optimizadas para un servidor Ubuntu Linux, pueden ser diferentes para otras distribuciones.
 
@@ -84,8 +84,8 @@ WantedBy=multi-user.target
 ```
 
 3. Guarda y cierra el archivo.
-4. Haz que el sistema operativo cargue la configuración del nuevo servicio con el comando sudo systemctl daemon-reload.
+4. Haz que el sistema operativo cargue la configuración del nuevo servicio con el comando ``sudo systemctl daemon-reload``.
 5. Inicia el servicio con el comando ``sudo systemctl start chatgpt-telegram``.
 6. Opcionalmente, puedes habilitar el servicio para que se inicie automáticamente cada vez que se inicie el servidor con el comando ``sudo systemctl enable chatgpt-telegram``.
 
-Una vez que hayas seguido estos pasos, el script ``chatgpt-telegram.py`` se ejecutará como un servicio en tu servidor Ubuntu. Puedes verificar el estado del servicio con el comando ``sudo systemctl status chatgpt-telegram``.
+Una vez que hayas seguido estos pasos, el script ``chatgpt-telegram.py`` se ejecutará como un servicio en tu servidor. Puedes verificar el estado del servicio con el comando ``sudo systemctl status chatgpt-telegram``.
