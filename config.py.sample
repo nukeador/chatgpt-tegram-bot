@@ -1,0 +1,23 @@
+# En este archivo configuramos todas las variables de usuario
+
+# API de OpenAI
+# https://beta.openai.com/account/api-keys
+openai_api_key = "XXXX"
+
+# Claves y servidor de AWS para Amazon polly
+# https://us-east-1.console.aws.amazon.com/iam/home?region=us-east-1#/security_credentials
+aws_access_key_id="XXXX"
+aws_secret_access_key="XXXX"
+region_name="eu-west-3"
+
+# Token del bot de Telegram
+# https://core.telegram.org/bots#how-do-i-create-a-bot
+telegram_token="XXXX"
+# Los IDs de telegram de los usuarios que responderá el bot
+# Talk to @userinfobot bot on telegram to get yours
+telegram_users=[XXXX]
+
+# Configuración y API de Stability.ia
+sd_engine_id = "stable-diffusion-512-v2-0"
+sd_api_host = "https://api.stability.ai"
+sd_api_key = "XXXX"

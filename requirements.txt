@@ -1,0 +1,3 @@
+pyTelegramBotAPI
+openai
+boto3
