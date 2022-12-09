@@ -2,6 +2,8 @@
 
 Este es un script de Python que permite a un usuario enviar mensajes a un bot de Telegram y recibir respuestas generadas utilizando la API de ChatGPT. También permite a los usuarios generar imágenes utilizando la API de stability.ia y obtener una transcripción de la respuesta de ChatGPT en formato de nota de voz generada por Amazon Polly.
 
+<img src="images/example.png" width=500px />
+
 ## Requisitos
 
 Para utilizar este script, necesitarás:
