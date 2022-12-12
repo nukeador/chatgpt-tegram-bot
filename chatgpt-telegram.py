@@ -35,7 +35,7 @@ else:
             prompt=prompt,
             max_tokens=1024,
             n=1,
-            temperature=0.5,
+            temperature=0.7,
         )
 
         # Devolver la primera respuesta generada por ChatGPT
