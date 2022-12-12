@@ -51,6 +51,8 @@ Esto instalará todos los paquetes necesarios en tu sistema. Una vez que se haya
 
 Antes de ejecutar el script, necesitarás configurar las credenciales de acceso para OpenAI, AWS, Telegram y stability.ai. Para hacerlo, renombra el archivo llamado `config.py.sample` en el mismo directorio que el script Python a `config.py` y rellena las variables con tus credenciales de acceso.
 
+***Importante***: EL 12/12/22 el modo web dejó de funcionar ([detalles técnicos](https://github.com/acheong08/ChatGPT/issues/273))
+
 Se puede conectar mediante web o api a OpenIA, se controla por la siguiente configuración:
 
 ```
@@ -160,6 +162,8 @@ This will install all the necessary packages on your system. Once they are insta
 ## Configuration
 
 Before running the script, you will need to configure the login credentials for OpenAI, AWS, Telegram and stability.ai. To do this, rename the file named `config.py.sample` in the same directory as the Python script to `config.py` and fill in the variables with your login credentials.
+
+***Important***: On 12/12/22 web mode stopped working ([technical details](https://github.com/acheong08/ChatGPT/issues/273))
 
 It can be connected via web or api to OpenIA, it is controlled by the following configuration:
 
