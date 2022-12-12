@@ -10,8 +10,12 @@ from pathlib import Path
 # Uso de ChatGPT web sin API
 if config.openai_mode == 'web':
     chatgpt_config = {
-        "email": config.openai_email,
-        "password": config.openai_password
+        # Email and password were deprecated use session_token
+        #"email": config.openai_email,
+        #"password": config.openai_password
+        "session_token": config.openai_session,
+        "cf_clearance": config.openai_clearance,
+        "user_agent": config.openai_useragent
     }
     chatbot = Chatbot(chatgpt_config, conversation_id=None)
 

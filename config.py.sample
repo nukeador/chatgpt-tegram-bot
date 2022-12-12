@@ -15,9 +15,13 @@ voice_enabled = True
 # el modo web es normalmente más lento y puede saturarse, pero recuerda las conversaciones
 openai_mode = "api"
 
-# Usuario y contraseña de OpenIA
-openai_email = "openai.kopieren@8alias.com"
+# Usuario y contraseña de OpenIA (no funcional ya)
+openai_email = "user@email.com"
 openai_password = "XXXX"
+# Cookie y token de sesión
+openai_session = "XXXX"
+openai_clearance = "XXXX"
+openai_useragent = "XXXX"
 
 # API de OpenAI (solo si el modo de openai es 'api')
 # https://beta.openai.com/account/api-keys
