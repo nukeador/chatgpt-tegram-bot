@@ -10,15 +10,14 @@ Este es un script de Python que permite a un usuario enviar mensajes a un bot de
 
 Para utilizar este script, necesitarás:
 
-* Una cuenta de OpenAI (opcionalmente una [clave de API](https://beta.openai.com/account/api-keys))
+* Una cuenta de OpenAI (y una [clave de API](https://platform.openai.com/account/api-keys))
 * Un bot de Telegram y un [token de autenticación](https://core.telegram.org/bots#how-do-i-create-a-bot)
 * (Opcional) Una cuenta de Amazon Web Services y [credenciales de acceso](https://us-east-1.console.aws.amazon.com/iam/home?region=us-east-1#/security_credentials)
 * (Opcional) Una cuenta en stability.ai y [credenciales de acceso](https://beta.dreamstudio.ai/membership?tab=apiKeys)
 
-Todos estos servicios dan créditos gratuitos de inicio, a Diciembre de 2022, estos son los costes de sus APIs:
+Todos estos servicios dan créditos gratuitos de inicio, a Marzo de 2023, estos son los costes de sus APIs:
 
-- ChatGPT web: Gratis
-- OpenIA API: 0,004$/petición
+- [OpenIA API](https://openai.com/pricing): 0,002$/1K tokens
 - Stability IA: 0,002$/petición (con 30 steps)
 - Amazon Polly: Aprox. 0,0125$/minuto de audio
 
@@ -53,13 +52,11 @@ Antes de ejecutar el script, necesitarás configurar las credenciales de acceso 
 
 ***Importante***: EL 12/12/22 el modo web dejó de funcionar ([detalles técnicos](https://github.com/acheong08/ChatGPT/issues/273))
 
-Se puede conectar mediante web o api a OpenIA, se controla por la siguiente configuración:
+Se puede conectar mediante [el api de tu cuenta de OpenIA](https://platform.openai.com/account/api-keys), se controla por la siguiente configuración:
 
 ```
-openai_mode = "web"
+openai_mode = "api"
 ```
-
-El modo web va más lento, pero solo necesitas tu usuario y contraseña, recuerda las conversaciones (a menos que ejecutes /resetchat) y de momento no tiene coste asociado.
 
 ## Ejecución
 
@@ -122,15 +119,14 @@ This is a Python script that allows a user to send messages to a Telegram bot an
 
 To use this script, you will need:
 
-* An OpenAI account (and optionally an [API key](https://beta.openai.com/account/api-keys)).
+* An OpenAI account (and an [API key](https://platform.openai.com/account/api-keys)).
 * A Telegram bot and an [authentication token](https://core.telegram.org/bots#how-do-i-create-a-bot)
 * (Optional) An Amazon Web Services account and [login credentials](https://us-east-1.console.aws.amazon.com/iam/home?region=us-east-1#/security_credentials)
 * (Optional) A stability.ai account and [login credentials](https://beta.dreamstudio.ai/membership?tab=apiKeys)
 
-All these services give free startup credits, as of December 2022, these are the costs of their APIs:
+All these services give free startup credits, as of March 2023, these are the costs of their APIs:
 
-- ChatGPT web: Free
-- OpenIA: $0.004/request.
+- OpenIA: $0.002/1K tokens.
 - Stability IA: 0,002$/request (with 30 steps)
 - Amazon Polly: Approx. $0.0125/audio minute
 
@@ -165,13 +161,11 @@ Before running the script, you will need to configure the login credentials for 
 
 ***Important***: On 12/12/22 web mode stopped working ([technical details](https://github.com/acheong08/ChatGPT/issues/273))
 
-It can be connected via web or api to OpenIA, it is controlled by the following configuration:
+It can be connected via [OpenIA api](https://platform.openai.com/account/api-keys), it is controlled by the following configuration:
 
 ```
-openai_mode = "web"
+openai_mode = "api"
 ```
-
-The web mode is slower, but you only need your username and password, it remembers the conversations (unless you run /resetchat) and for the moment it has no associated cost.
 
 ## Execution
 
