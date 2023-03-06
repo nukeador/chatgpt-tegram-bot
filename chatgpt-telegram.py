@@ -30,16 +30,18 @@ else:
 
     # Función para generar una respuesta utilizando la API de ChatGPT
     def generate_response(prompt):
-        response = openai.Completion.create(
-            engine="gpt-3.5-turbo",
-            prompt=prompt,
+        response = openai.ChatCompletion.create(
+            model="gpt-3.5-turbo",
+            messages=[
+                {"role": "user", "content": prompt}
+            ],
             max_tokens=1024,
             n=1,
             temperature=0.7,
         )
 
         # Devolver la primera respuesta generada por ChatGPT
-        return response["choices"][0]["text"]
+        return response["choices"][0]["message"]['content']
 
 if config.voice_enabled:
     # Crear un cliente de Amazon Polly
