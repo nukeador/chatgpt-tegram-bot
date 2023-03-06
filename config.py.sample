@@ -7,25 +7,17 @@ telegram_token="XXXX"
 # Talk to @userinfobot bot on telegram to get yours
 telegram_users=[XXXX]
 
-# Activar o no la opción de envío de notas de voz
-voice_enabled = True
-
 # Modo de conectarnos a openai, mediante la web con usuario y contraseña (web)
 # o mediante la API con una clave (api) que tiene un coste asociado
-# el modo web es normalmente más lento y puede saturarse, pero recuerda las conversaciones
+# el modo web ya no funciona
 openai_mode = "api"
 
-# Usuario y contraseña de OpenIA (no funcional ya)
-openai_email = "user@email.com"
-openai_password = "XXXX"
-# Cookie y token de sesión
-openai_session = "XXXX"
-openai_clearance = "XXXX"
-openai_useragent = "XXXX"
-
-# API de OpenAI (solo si el modo de openai es 'api')
-# https://beta.openai.com/account/api-keys
+# API de OpenAI (si el modo de openai es 'api')
+# https://platform.openai.com/account/api-keys
 openai_api_key = "XXXX"
+
+# Activar o no la opción de envío de notas de voz
+voice_enabled = True
 
 # Claves y servidor de AWS para Amazon polly
 # https://us-east-1.console.aws.amazon.com/iam/home?region=us-east-1#/security_credentials
@@ -34,6 +26,15 @@ aws_secret_access_key="XXXX"
 region_name="eu-west-3"
 
 # Configuración y API de Stability.ia
+# https://beta.dreamstudio.ai/membership?tab=apiKeys
 sd_engine_id = "stable-diffusion-512-v2-0"
 sd_api_host = "https://api.stability.ai"
 sd_api_key = "XXXX"
+
+# Usuario y contraseña de OpenIA (no funciona ya, usar API)
+openai_email = "user@email.com"
+openai_password = "XXXX"
+# Cookie y token de sesión
+openai_session = "XXXX"
+openai_clearance = "XXXX"
+openai_useragent = "XXXX"
